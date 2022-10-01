@@ -49,7 +49,6 @@ function Navigation() {
           <AnchorLink route="/">
             <Button
               style={`side-nav-btn ${page === "home" ? "page" : null} `}
-              click={() => handleNav("home")}
             >
               Home
             </Button>
@@ -57,15 +56,13 @@ function Navigation() {
           <AnchorLink route="#about">
             <Button
               style={`side-nav-btn ${page === "about" ? "page" : null} `}
-              click={() => handleNav("about")}
             >
               About
             </Button>
           </AnchorLink>
-          <AnchorLink route="/#Press">
+          <AnchorLink route="#Press">
             <Button
               style={`side-nav-btn ${page === "Press" ? "page" : null} `}
-              click={() => handleNav("Press")}
             >
               Press
             </Button>
@@ -73,7 +70,6 @@ function Navigation() {
           <AnchorLink route="#Book Signing">
             <Button
               style={`side-nav-btn ${page === "Book Signing" ? "page" : null} `}
-              click={() => handleNav("Book Signing")}
             >
               Book Signing
             </Button>
@@ -81,7 +77,6 @@ function Navigation() {
           <AnchorLink route="#Contact">
             <Button
               style={`side-nav-btn ${page === "contact" ? "page" : null} `}
-              click={() => handleNav("contact")}
             >
               Contact
             </Button>
