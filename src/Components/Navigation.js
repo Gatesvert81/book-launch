@@ -45,24 +45,25 @@ function Navigation() {
           show ? "bg-white/70 backdrop-blur-md" : "transparent"
         } ${sideNav ? "bg-white/70 backdrop-blur-md" : "transparent"} `}
       >
-        <div className="hidden md:flex gap-5" >
+        <div className="hidden md:flex gap-5">
           <AnchorLink route="/">
             <Button
               style={`side-nav-btn ${page === "home" ? "page" : null} `}
+              click={() => setPage("home")}
             >
               Home
             </Button>
           </AnchorLink>
           <AnchorLink route="#About">
-            <Button
-              style={`side-nav-btn ${page === "about" ? "page" : null} `}
+            <Button style={`side-nav-btn ${page === "about" ? "page" : null} `}
+              click={() => setPage("about")}
             >
               About
             </Button>
           </AnchorLink>
           <AnchorLink route="#Press">
-            <Button
-              style={`side-nav-btn ${page === "Press" ? "page" : null} `}
+            <Button style={`side-nav-btn ${page === "Press" ? "page" : null} `}
+              click={() => setPage("Press")}
             >
               Press
             </Button>
@@ -70,6 +71,7 @@ function Navigation() {
           <AnchorLink route="#Book Signing">
             <Button
               style={`side-nav-btn ${page === "Book Signing" ? "page" : null} `}
+              click={() => setPage("Book Signing")}
             >
               Book Signing
             </Button>
@@ -77,14 +79,13 @@ function Navigation() {
           <AnchorLink route="#Contact">
             <Button
               style={`side-nav-btn ${page === "contact" ? "page" : null} `}
+              click={() => setPage("contact")}
             >
               Contact
             </Button>
           </AnchorLink>
         </div>
-        <div className="w-32 h-full relative">
-
-        </div>
+        <div className="w-32 h-full relative"></div>
         <div
           className="md:hidden flex w-6 h-6 bg-transparent flex-col justify-evenly items-center relative overflow-hidden cursor-pointer"
           onClick={() => setSideNav(!sideNav)}
