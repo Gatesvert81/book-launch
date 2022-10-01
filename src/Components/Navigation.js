@@ -53,7 +53,7 @@ function Navigation() {
               Home
             </Button>
           </AnchorLink>
-          <AnchorLink route="#about">
+          <AnchorLink route="#About">
             <Button
               style={`side-nav-btn ${page === "about" ? "page" : null} `}
             >
